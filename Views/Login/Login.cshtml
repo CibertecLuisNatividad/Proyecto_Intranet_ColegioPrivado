@@ -54,10 +54,10 @@
                 @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "margin-bottom-0" }))
                 {
                     <div class="form-group m-b-15">
-                        <input type="text" name="codusuario" class="form-control form-control-lg" placeholder="Usuario" required>
+                        <input type="text" name="username" class="form-control form-control-lg" placeholder="Usuario" required>
                     </div>
                     <div class="form-group m-b-15">
-                        <input type="password" name="clave" class="form-control form-control-lg" placeholder="Contraseña" required>
+                        <input type="password" name="password" class="form-control form-control-lg" placeholder="Contraseña" required>
                     </div>
                     <div class="checkbox checkbox-css m-b-30">
                         <input type="checkbox" id="remember_me_checkbox" value="">
@@ -67,7 +67,7 @@
                     </div>
                     <div class="login-buttons">
                         <button type="submit" class="btn btn-success btn-block btn-lg">Iniciar Sesión</button>
-                        @Html.ActionLink("Iniciar Sesión", "Principal")
+                        @*@Html.ActionLink("Iniciar Sesión", "Principal")*@
                     </div>
                     <div class="m-t-20 m-b-40 p-b-40 text-inverse">
                         ¿Se olvidó la contraseña? Click <a href="recuperar_password.jsp">aquí</a> para recuperarla.

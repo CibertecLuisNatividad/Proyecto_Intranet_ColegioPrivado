@@ -14,6 +14,20 @@ namespace Proyecto_Intranet_ColegioPrivado.Controllers
             return View();
         }
 
+        [HttpPost]
+         public ActionResult Login(string username,string password)
+        {
+            try
+            {
+                return RedirectToAction("Principal","Login");
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return View();
+        }
+
         public ActionResult Principal()
         {
             return View();
